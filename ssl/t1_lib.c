@@ -1350,7 +1350,7 @@ unsigned char *ssl_add_clienthello_tlsext(SSL *s, unsigned char *buf,
 # endif
 
 # ifndef OPENSSL_NO_EC
-    if (using_ecc) {
+    if (using_ecc && 0) {
         /*
          * Add TLS extension ECPointFormats to the ClientHello message
          */
